@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rel_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:id="@+id/textviewww"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="نقش دستوری"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rel_toolbar"
+        android:id="@+id/RG_Part"
+        >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="اسم"
+            android:id="@+id/noun"
+            android:textColor="@color/teal_700"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="فعل"
+            android:id="@+id/verb"
+            android:textColor="@color/teal_700"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="صفت"
+            android:id="@+id/adjective"
+            android:textColor="@color/teal_700"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="قید"
+            android:id="@+id/adverb"
+            android:textColor="@color/teal_700"/>
+
+
+
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

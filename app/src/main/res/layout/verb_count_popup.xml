@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rel_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:text=" صرف افعال"
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rel_toolbar"
+        android:layout_margin="8dp"
+        android:hint="من"
+        android:id="@+id/I"
+        android:visibility="visible"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/I"
+        android:layout_margin="8dp"
+        android:hint="تو"
+        android:id="@+id/you1"
+        android:visibility="visible"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/you1"
+        android:layout_margin="8dp"
+        android:hint="او"
+        android:id="@+id/she"
+        android:visibility="visible"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/she"
+        android:layout_margin="8dp"
+        android:hint="ما"
+        android:id="@+id/we"
+        android:visibility="visible"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/we"
+        android:layout_margin="8dp"
+        android:hint="شما"
+        android:id="@+id/you2"
+        android:visibility="visible"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/you2"
+        android:layout_margin="8dp"
+        android:hint="آنها"
+        android:id="@+id/they"
+        android:visibility="visible"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/they"
+        android:layout_margin="8dp"
+        android:text="ثبت"
+        android:id="@+id/btn_insert_verbCount"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

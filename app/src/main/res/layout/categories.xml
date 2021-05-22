@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rel_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="دسته بندی"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scroll"
+        app:layout_constraintTop_toBottomOf="@+id/rel_toolbar">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/RG_cat"
+        >
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/animals"
+            android:text="حیوانات"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fruit"
+            android:text="میوه"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/food"
+            android:text="غذا"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/body"
+            android:text="اعضای بدن"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/clothes"
+            android:text="پوشاک"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/job"
+            android:text="شغل"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idioms_cat"
+            android:text="اصطلاحات"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verbs_cat"
+            android:text="افعال"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/insects"
+            android:text="حشرات"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/old_words"
+            android:text="کلمات منسوخ شده"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/numbers"
+            android:text="اعداد"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/family_members"
+            android:text="خانواده و فامیل"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/House"
+            android:text="منزل"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/houseHolds"
+            android:text="لوازم خانه"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:text="زمان"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather"
+            android:text="آب و هوا"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_words"
+            android:text="کلمات پرسشی"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seasons"
+            android:text="فصل ها"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vegetable"
+            android:text="سبزیحات"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+
+
+    </RadioGroup>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

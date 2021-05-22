@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rel_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:id="@+id/textviewww"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="فرهنگ لغت خلجی"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchViewwww"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"
+            android:backgroundTint="@color/white"
+            android:visibility="gone"
+            android:layout_marginHorizontal="5dp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="2dp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/rel_toolbar"
+        android:layout_margin="8dp"
+        android:id="@+id/rec_list"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add"
+        tools:listitem="@layout/history_items"
+        android:padding="4dp"
+       />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="8dp"
+        android:text="اضافه کردن"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@drawable/btn_circle_bg"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

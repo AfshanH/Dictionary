@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Insert">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rel_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/teal_700">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rel_toolbar"
+        android:id="@+id/word"
+        android:hint="کلمه"
+        android:layout_margin="12dp"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/word"
+        android:id="@+id/phonetics"
+        android:hint="تلفظ"
+        android:layout_margin="12dp"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/phonetics"
+        android:id="@+id/farsiDef"
+        android:hint="معنی فارسی"
+        android:layout_margin="12dp"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/farsiDef"
+        android:id="@+id/exampleWithDef"
+        android:hint="مثال"
+        android:layout_margin="12dp"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/exampleWithDef"
+        android:id="@+id/khalajiSyn"
+        android:hint="مترادف خلجی"
+        android:layout_margin="12dp"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/khalajiSyn"
+        android:id="@+id/exampleWithSyn"
+        android:hint="مثال با مترادف"
+        android:layout_margin="12dp"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/exampleWithSyn"
+        android:id="@+id/PartOfSpeach"
+        android:hint="نقش دستوری"
+        android:layout_margin="12dp"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:textColor="@color/teal_700"
+        />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/PartOfSpeach"
+        android:id="@+id/verbCount"
+        android:hint="صرف افعال"
+        android:layout_margin="12dp"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:textColor="@color/teal_700"
+        />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/verbCount"
+        android:id="@+id/Idioms"
+        android:hint="اصطلاحات"
+        android:layout_margin="12dp"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:textColor="@color/teal_700"
+        />
+
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Idioms"
+        android:id="@+id/Categories"
+        android:hint="دسته بندی ها"
+        android:layout_margin="12dp"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:textColor="@color/teal_700"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="8dp"
+        android:text="ثبت"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@drawable/btn_circle_bg"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

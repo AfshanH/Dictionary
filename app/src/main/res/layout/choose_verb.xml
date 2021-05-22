@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rel_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:text="افعال"
+            />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rel_toolbar"
+        android:id="@+id/RG_verb"
+        >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="گذشته ساده"
+            android:id="@+id/simple_past"
+            android:textColor="@color/teal_700"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="گذشته نقلی"
+            android:id="@+id/present_perfect"
+            android:textColor="@color/teal_700"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="گذشته بعید"
+            android:id="@+id/past_perfect"
+            android:textColor="@color/teal_700"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="گذشته استمراری"
+            android:id="@+id/past_continues"
+            android:textColor="@color/teal_700"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="گذشته التزامی"
+            android:id="@+id/subjunctive"
+            android:textColor="@color/teal_700"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="گذشته ابعد"
+            android:id="@+id/very_past_perfect"
+            android:textColor="@color/teal_700"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="گذشته نقلی استمراری"
+            android:id="@+id/present_perfect_continues"
+            android:textColor="@color/teal_700"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="گذشته ملموس"
+            android:id="@+id/malmoos_past"
+            android:textColor="@color/teal_700"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="حال ساده"
+            android:id="@+id/simple_present"
+            android:textColor="@color/teal_700"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="حال اخباری"
+            android:id="@+id/present_continues"
+            android:textColor="@color/teal_700"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="حال التزامی"
+            android:id="@+id/modals_present"
+            android:textColor="@color/teal_700"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="18sp"
+            android:text="آینده"
+            android:id="@+id/future"
+            android:textColor="@color/teal_700"/>
+
+
+
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
