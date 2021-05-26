@@ -2,6 +2,7 @@ package com.example.momsdictionary.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AlertDialog
@@ -29,6 +30,7 @@ class VerbActivity : AppCompatActivity() {
             "امری",
             "نهی"
         )
+
 
         var arrAdapter: ArrayAdapter<String> =
             ArrayAdapter(this, android.R.layout.simple_list_item_1, list)
