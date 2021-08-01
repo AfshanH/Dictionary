@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="8dp"
+    android:layout_margin="4dp"
     android:padding="4dp">
 
     <TextView
@@ -12,7 +12,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_margin="4dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
         android:textColor="@color/teal_700"
         android:text="سلام"/>
 
@@ -22,12 +25,25 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/his_word"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_margin="2dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
         android:maxLines="1"
         android:ellipsize="end"
         android:text="سلام واژه بسیار مقدسی بوده و استنتاج کلی از اصطلاح سلام در جوامع کهن و مقید، تظاهر به تقوا و همچنین نهضتی در مقابل هم‌جنس‌گرایی بوده‌است. به عبارتی آنها که سلام می‌گفتند در واقع ابراز ضد هم‌جنس‌گرایی می‌کردند تا سره از ناسره مشخص گردد."
         android:textDirection="rtl"
         android:layoutDirection="rtl"
+        />
+
+    <View
+        android:id="@+id/view_historyList"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BAB5B5"
+        app:layout_constraintTop_toBottomOf="@+id/his_mean"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
         />
 
 

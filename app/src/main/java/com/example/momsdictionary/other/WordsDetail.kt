@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_bottom_sheet_dialog_insurrance.*
 import kotlinx.android.synthetic.main.activity_insert.*
 import kotlinx.android.synthetic.main.activity_words_detail.*
 
+
 class WordsDetail : AppCompatActivity() {
 
 //    val db = Methods(this)
@@ -25,8 +26,6 @@ class WordsDetail : AppCompatActivity() {
     var bundle = Bundle()
     var words: String? = null
 
-    var bottomSheetDialogInsurrance : BottomSheetDialogInsurrance?= null
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,31 +33,58 @@ class WordsDetail : AppCompatActivity() {
 
         textviewsFun()
 
+        val bottomSheetDialogInsurrance = BottomSheetDialogInsurrance()
+
 
         btn_edit.setOnClickListener {
 
-            editFun()
 
-//            bottomSheetDialogInsurrance?.show(supportFragmentManager,null)
-//            bottomSheetDialogInsurrance = BottomSheetDialogInsurrance(object : BottomSheetDialogInsurrance.OnBottomSheetClickListener{
-//                override fun onBClick(id: Int) {
-//
-//                    when(id){
-//                        R.id.bottomsheet_yes ->  editFun()
-//
-//                        R.id.bottomsheet_No ->{
-//                            Toast.makeText(applicationContext, "انجام نشد", Toast.LENGTH_SHORT).show()
-//                            finish()
-//                        }
-//                    }
-//
-//                }
-//
-//            })
+            bottomSheetDialogInsurrance.show(supportFragmentManager, "BottomSheetDialog")
 
+
+            bottomSheetDialogInsurrance.onBottomSheetClickListener =
+                object : BottomSheetDialogInsurrance.OnBottomSheetClickListener {
+
+                    override fun onBClick(id: Int) {
+
+
+                        when (id) {
+                            R.id.bottomsheet_yes -> {
+                                editFun()
+                            }
+
+                            R.id.bottomsheet_No -> {
+                              bottomSheetDialogInsurrance.dismiss()
+                            }
+
+                        }
+
+                    }
+                }
         }
         btn_delete.setOnClickListener {
-            deleteFun()
+            bottomSheetDialogInsurrance.show(supportFragmentManager, "BottomSheetDialog")
+
+
+            bottomSheetDialogInsurrance.onBottomSheetClickListener =
+                object : BottomSheetDialogInsurrance.OnBottomSheetClickListener {
+
+                    override fun onBClick(id: Int) {
+
+
+                        when (id) {
+                            R.id.bottomsheet_yes -> {
+                                deleteFun()
+                            }
+
+                            R.id.bottomsheet_No -> {
+                                bottomSheetDialogInsurrance.dismiss()
+                            }
+
+                        }
+
+                    }
+                }
         }
 
 
@@ -95,7 +121,7 @@ class WordsDetail : AppCompatActivity() {
     private fun textviewsFun() {
 
         bundle = intent.extras!!
-        words=bundle.getString("word")
+        words = bundle.getString("word")
 
         model = db.GetWordsdata(words)
 
