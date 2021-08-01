@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MomsDictionary">
-        <activity android:name=".ui.VerbActivity"></activity>
+        <activity android:name=".ui.BottomSheetDialogInsurrance"></activity>
+        <activity android:name=".other.WordsDetail" />
+        <activity android:name=".ui.VerbActivity" />
         <activity android:name=".ui.Insert" />
         <activity android:name=".ui.MainActivity">
             <intent-filter>

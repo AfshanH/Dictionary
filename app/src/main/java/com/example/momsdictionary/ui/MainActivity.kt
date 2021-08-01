@@ -9,6 +9,7 @@ import com.example.momsdictionary.R
 import com.example.momsdictionary.other.WordsAdapter
 import com.example.momsdictionary.db.Helper
 import com.example.momsdictionary.db.Methods
+import com.example.momsdictionary.other.WordsDetail
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +33,12 @@ class MainActivity : AppCompatActivity() {
             WordsAdapter(applicationContext, wordLists,wordsMean, object : WordsAdapter.Interaction {
                 override fun onItemSelected(position: Int) {
                     val select = wordLists.get(position)
-                    Toast.makeText(applicationContext, "$select", Toast.LENGTH_SHORT).show()
+
+                    val intent = Intent(this@MainActivity , WordsDetail::class.java)
+                    with(intent){
+                        putExtra("word" , select)
+                    }
+                    startActivity(intent)
                 }
 
             })
